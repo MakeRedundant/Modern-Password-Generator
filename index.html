@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <div class="input-container">
+            <label for="characterLimit">Character Limit:</label>
+            <input type="range" id="characterLimit" min="8" max="128" value="64" />
+            <span id="characterLimitValue">64</span>
+          </div>
+          <div class="input-container">
+            <label for="includeLowercase">Include Lowercase characters:</label>
+            <input type="checkbox" id="includeLowercase" checked />
+          </div>
+          <div class="input-container">
+            <label for="includeUppercase">Include Uppercase characters:</label>
+            <input type="checkbox" id="includeUppercase" checked />
+          </div>
+          <div class="input-container">
+            <label for="includeNumbers">Include Numbers:</label>
+            <input type="checkbox" id="includeNumbers" checked />
+          </div>
+          <div class="input-container">
+            <label for="includeSpecialCharacters">Include Special Characters:</label>
+            <input type="checkbox" id="includeSpecialCharacters" checked />
+          </div>
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+          <button id="save" class="btn">Save Password</button>
+        </div>
+        <div class="saved-passwords">
+          <h3>Saved Passwords:</h3>
+          <p>Click to save!</p>
+          <ul id="passwordList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

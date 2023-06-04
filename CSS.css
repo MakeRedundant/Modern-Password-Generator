@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(7, 7, 124);
+    color: #fff;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+  
+/* Wrapper styles */
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: black;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    border-bottom: 1px solid blue;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .card-footer {
+    border-bottom: 1px solid blue;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .card-footer .btn { /* just so the border and the buttons arent too close */
+    margin: 20px;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: both; /*Allows the user to resize */
+    margin-bottom: 10px;
+  }
+  
+  .saved-passwords {
+    margin-top: 20px;
+  }
+  
+  .saved-passwords h3 {
+    margin-bottom: 10px;
+  }
+  
+  .saved-passwords ul {
+    max-height: 200px; /* Set the maximum height of the password list */
+    overflow: auto; /* Add vertical scroll bars when content exceeds the height */
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .saved-passwords ul li {
+    white-space: nowrap; /* Prevent the password text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show dots/ ellipsis (...) when the text is too long */
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .saved-passwords ul li:hover {
+    background-color: lightblue;
+    color: black;
+  }
+  .password-list-container {
+    margin-top: 20px;
+  }
+  
+  #passwordList {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .password-list-container {
+    margin-top: 20px;
+    height: 150px;
+    overflow: auto;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  }
+  
