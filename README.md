@@ -9,7 +9,7 @@ The password generated will fit the requirements of the user and is able to be d
 The website will save multiple passwords each independetly should the user require multiple generated passwords
 
 ## Usage
-User can utilise the website to generate secure passwords that suits their requirements.
+Users can utilise the website to generate secure passwords that suits their requirements.
 The website can be viewed below with a link to the deployed website.
 
 ## Screenshot
